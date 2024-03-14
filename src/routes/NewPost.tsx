@@ -5,6 +5,7 @@ import { Link, Form, redirect } from "react-router-dom";
 export type PostData = {
   body: string;
   author: string;
+  id: string;
 };
 
 export default function NewPost() {

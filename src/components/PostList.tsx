@@ -10,8 +10,8 @@ export default function PostsList() {
     <>
       {posts.length > 0 && (
         <ul className={styles.posts}>
-          {posts.map(({ author, body }, idx) => (
-            <Post key={idx} author={author} body={body} />
+          {posts.map(({ author, body, id }) => (
+            <Post key={id} id={id} author={author} body={body} />
           ))}
         </ul>
       )}
